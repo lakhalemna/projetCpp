@@ -15,26 +15,29 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);
-background-color: rgb(255, 255, 255);</string>
+background-color: rgb(255, 255, 255);
+
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>-10</y>
-      <width>851</width>
-      <height>61</height>
+      <x>-10</x>
+      <y>0</y>
+      <width>861</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">/*background-color: rgb(255, 121, 3);*/
 /*background-color: rgb(0, 170, 255);*/
 /*background-color: rgb(0, 85, 255);*/
-background-color: rgb(255, 0, 0);
+/*background-color: rgb(255, 0, 0);*/
 
 font: 36pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255);
+background-color: rgb(0, 85, 255);
 </string>
     </property>
     <property name="text">
@@ -47,29 +50,28 @@ color: rgb(255, 255, 255);
       <x>0</x>
       <y>50</y>
       <width>851</width>
-      <height>481</height>
+      <height>511</height>
      </rect>
     </property>
     <property name="toolTip">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;gestion des visites&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">background-image: url(C:/Users/ammou/Desktop/interfacef/int.jpg);
 
 
-background: url(C:/Users/ammou/Desktop/interfacef/int.jpg);
 
 
 </string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
       <string>Gestion des centres</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton_recherche">
+     <widget class="QPushButton" name="pushButton_rechercheC">
       <property name="geometry">
        <rect>
         <x>170</x>
@@ -79,8 +81,9 @@ background: url(C:/Users/ammou/Desktop/interfacef/int.jpg);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(222, 222, 130);
-border-radius:10px;</string>
+       <string notr="true">background: rgb(222, 222, 130);
+border-radius:10px;
+</string>
       </property>
       <property name="text">
        <string>Rechercher un centre</string>
@@ -89,15 +92,17 @@ border-radius:10px;</string>
      <widget class="QLineEdit" name="lineEdit_rechercher">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>300</x>
         <y>200</y>
         <width>113</width>
         <height>20</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);
-</string>
+       <string notr="true">background: white;
+border-radius: 10px;
+border-color:black;
+border:1px solid #000000; </string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_pdfC">
@@ -110,7 +115,12 @@ border-radius:10px;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(222, 222, 130); 
+       <string notr="true">
+
+
+background: rgb(222, 222, 130);
+border-radius:10px; 
+
 border-radius:10px;
 </string>
       </property>
@@ -128,15 +138,15 @@ border-radius:10px;
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(189, 189, 0);
-/*background-color: rgb(170, 170, 127);*/
+       <string notr="true">background: rgb(222, 222, 130);
+
 border-radius:10px;</string>
       </property>
       <property name="text">
        <string>Statistiques</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_8">
+     <widget class="QPushButton" name="pushButton_trierCid">
       <property name="geometry">
        <rect>
         <x>610</x>
@@ -146,7 +156,12 @@ border-radius:10px;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(222, 222, 130);
+       <string notr="true">
+
+
+background: rgb(222, 222, 130);
+border-radius:10px; 
+
 border-radius:10px;</string>
       </property>
       <property name="text">
@@ -163,8 +178,15 @@ border-radius:10px;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);
+       <string notr="true">background: rgb(255, 255, 255);
 
+
+
+border:1px solid ;
+
+border-radius:10px; 
+
+border-radius:10px;
 </string>
       </property>
      </widget>
@@ -180,7 +202,7 @@ border-radius:10px;</string>
       <property name="styleSheet">
        <string notr="true">
 position:absolut;
-background-color: rgb(255, 255, 255);</string>
+background: #ffffff;</string>
       </property>
       <property name="title">
        <string>ajouter centre</string>
@@ -238,37 +260,32 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
        <property name="geometry">
         <rect>
          <x>470</x>
-         <y>30</y>
-         <width>161</width>
-         <height>16</height>
+         <y>26</y>
+         <width>141</width>
+         <height>20</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;
+border-color:black;
+border:1px solid #000000; 
+</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_localC">
        <property name="geometry">
         <rect>
          <x>80</x>
-         <y>80</y>
-         <width>151</width>
-         <height>16</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_modC">
-       <property name="geometry">
-        <rect>
-         <x>120</x>
-         <y>130</y>
-         <width>101</width>
-         <height>23</height>
+         <y>76</y>
+         <width>131</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(222, 222, 130);
-border-radius:10px;</string>
-       </property>
-       <property name="text">
-        <string>Modifier un centre</string>
+        <string notr="true">border-radius: 10px;
+border-color:black;
+border:1px solid #000000; 
+</string>
        </property>
       </widget>
       <widget class="QPushButton" name="pushButton_ajoutC">
@@ -308,31 +325,24 @@ border-radius:10px;</string>
        <property name="geometry">
         <rect>
          <x>470</x>
-         <y>80</y>
-         <width>161</width>
-         <height>16</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEditIdC">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
-         <y>30</y>
-         <width>151</width>
-         <height>16</height>
+         <y>75</y>
+         <width>121</width>
+         <height>21</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">border-radius: 10px;
+border-color:black;
+border:1px solid #000000; 
+</string>
        </property>
       </widget>
       <widget class="QPushButton" name="pushButton_SC">
        <property name="geometry">
         <rect>
-         <x>330</x>
+         <x>320</x>
          <y>130</y>
-         <width>41</width>
+         <width>101</width>
          <height>23</height>
         </rect>
        </property>
@@ -341,19 +351,55 @@ border-radius:10px;</string>
 border-radius:10px;</string>
        </property>
        <property name="text">
-        <string/>
+        <string>supprimer</string>
        </property>
        <property name="icon">
         <iconset>
          <normaloff>../../Downloads/téléchargement (5).png</normaloff>../../Downloads/téléchargement (5).png</iconset>
        </property>
       </widget>
+      <widget class="QPushButton" name="pushButton_modC">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>130</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(222, 222, 130);
+border-radius:10px; 
+
+border-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string>Modifier un centre</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditIdC">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>25</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;
+border-color:black;
+border:1px solid #000000; 
+
+</string>
+       </property>
+      </widget>
      </widget>
-     <zorder>pushButton_recherche</zorder>
+     <zorder>pushButton_rechercheC</zorder>
      <zorder>lineEdit_rechercher</zorder>
      <zorder>pushButton_pdfC</zorder>
      <zorder>pushButton_6</zorder>
-     <zorder>pushButton_8</zorder>
+     <zorder>pushButton_trierCid</zorder>
      <zorder>groupBox</zorder>
      <zorder>tableCentre</zorder>
     </widget>

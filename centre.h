@@ -13,6 +13,11 @@ public:
     QSqlQueryModel * afficherC();
     bool modifierC(int id);
     bool supprimerC(int id);
+    bool genererPDF();
+    QSqlQueryModel* trierparid();
+    bool rechercheparadresse(QString adresse);
+    QSqlQueryModel* trierparAdresse();
+    QSqlQueryModel* afficherparadresse(QString adresse);
 
 
 

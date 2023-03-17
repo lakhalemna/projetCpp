@@ -25,6 +25,16 @@ private slots:
 
     void on_tableCentre_clicked(const QModelIndex &index);
 
+    void on_pushButton_pdfC_clicked();
+
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_recherche_clicked();
+
+    void on_pushButton_rechercheC_clicked();
+
+    void on_pushButton_trierCid_clicked();
+
 private:
     Ui::MainWindow *ui;
     centre c ;

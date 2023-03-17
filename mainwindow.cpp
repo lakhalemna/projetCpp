@@ -13,6 +13,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->lineEditIdC->setValidator( new QIntValidator(0, 999, this));
+    QStringList allowedValues = {"ferme", "ouvert"};
+    QRegExpValidator *validator = new QRegExpValidator(QRegExp(allowedValues.join("|")));
+    ui->lineEditEtat->setValidator(validator);
+    QRegExpValidator *validatorr = new QRegExpValidator(QRegExp("[a-zA-Z]+"));
+    ui->lineEditnomCentre->setValidator(validatorr);
 
    ui->tableCentre->setModel(c.afficherC());
    ui->tableCentre->setModel(c.afficherC()) ;
@@ -121,4 +126,63 @@ void MainWindow::on_tableCentre_clicked(const QModelIndex &index)
 
 
 
+}
+
+void MainWindow::on_pushButton_pdfC_clicked()
+{
+    centre c ;
+        bool test=false;
+            test=c.genererPDF();
+            if(test)
+
+                {
+               // ui->tableCentre->setModel(c.afficherC());
+                QMessageBox::information(nullptr, QObject::tr("créé"),
+
+                                    QObject::tr(" PDF créé.\n"
+
+                                                "Click Cancel to exit."), QMessageBox::Cancel);}
+            else
+
+                {
+
+                    QMessageBox::critical(nullptr, QObject::tr("non créé"),
+
+                                QObject::tr("PDF non créé !.\n"
+
+                                            "Click Cancel to exit."), QMessageBox::Cancel);
+
+
+
+        }
+}
+
+void MainWindow::on_pushButton_rechercheC_clicked()
+{
+    /*QString adresse=ui->lineEdit_localC->text();
+
+   bool test=c.rechercheparadresse(adresse);
+   if(test)
+   {
+
+       QMessageBox::information(nullptr, QObject::tr("reference existe"),
+                   QObject::tr("reference existe.\n"
+                               "Click Cancel to exit."), QMessageBox::Cancel);
+       ui->tableCentre->setModel( c.afficherparadresse(adresse));//refresh
+
+       //ui->tableView->clear();
+
+   }
+   else
+       QMessageBox::critical(nullptr, QObject::tr("reference n'existe pas"),
+                   QObject::tr("reference n'existe pas !.\n"
+                               "Click Cancel to exit."), QMessageBox::Cancel);
+      // ui->tableView->clear();*/
+
+
+}
+
+void MainWindow::on_pushButton_trierCid_clicked()
+{
+   ui->tableCentre->setModel(c.trierparid());
 }
